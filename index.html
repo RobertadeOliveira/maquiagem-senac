@@ -19,6 +19,52 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   <title>Pat Veiga Make Up</title>
+  <style>
+    /* Adicione a imagem de fundo ao header */
+    header {
+        background-image:linear-gradient(to bottom, rgba(6, 18, 30, 0.5), #06121e), url("./assets/maquiador.png");
+        /* Define a imagem de fundo para o header */
+        background-size: cover;
+        /* Ajusta o tamanho da imagem de fundo para cobrir todo o header */
+        background-position: center;
+        /* Centraliza a imagem de fundo no header */
+        background-repeat: no-repeat;
+        /* Evita que a imagem de fundo se repita */
+              
+    }
+
+    /* Garanta que o conteúdo no header esteja acima da imagem de fundo */
+    header .content {
+        position: relative;
+        /* Define a posição relativa para o conteúdo do header */
+        z-index: 1;
+        /* Adiciona um z-index maior para que o conteúdo esteja na frente */
+    }
+
+    /* Adicione um overlay preto para melhorar a visibilidade do texto */
+    header::before {
+        content: "";
+        /* Adiciona um pseudo-elemento antes do conteúdo do header */
+        position: absolute;
+        /* Define a posição absoluta para o pseudo-elemento */
+        top: 0;
+        /* Posiciona o pseudo-elemento no topo do header */
+        left: 0;
+        /* Posiciona o pseudo-elemento à esquerda do header */
+        width: 100%;
+        /* Define a largura do pseudo-elemento para cobrir 100% do header */
+        height: 100%;
+        /* Define a altura do pseudo-elemento para cobrir 100% do header */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Adiciona uma cor de fundo preta com opacidade para o pseudo-elemento */
+        z-index: 0;
+        /* Adiciona um z-index menor para que o overlay esteja entre o fundo e o conteúdo */
+    }
+   
+        .horario {
+            color: rgb(255, 255, 255);
+        }
+</style>
 </head>
 
 <body id="page1">
